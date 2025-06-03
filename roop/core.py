@@ -14,11 +14,6 @@ import signal
 import shutil
 import argparse
 import onnxruntime
-import numpy as _np
-     if not hasattr(_np, 'dtypes'):
-         # cria o alias que JAX/TFLite ainda espera
-         _np.dtypes = _np
-         
 import tensorflow
 import roop.globals
 import roop.metadata
